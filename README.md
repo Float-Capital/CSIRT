@@ -54,7 +54,7 @@ These procedures are designed to enable security personnel to identify, mitigate
     - Whatsapp: <redacted>
     - Discord: Jason | float & wildcards#9999
 - Jonathan Clark - Founder
-    - Telegram @jonjonclark
+    - Telegram: @jonjonclark
     - Whatsapp: <redacted>
     - Discord: jonjon | float#2270
 - Denham Preen - Founder:
@@ -192,9 +192,9 @@ All communications around an incident must be carefully managed to mitigate fall
 | Stakeholder group | Communications medium | Responsible |
 | --- | --- | --- |
 | Team members | Discord, team syncs | Pod heads |
-| Investors | Email, Telegram | Denham, Jason, Jonjon |
+| Investors | Email, Telegram | Denham, Jason, Jonathan |
 | Regulators | Formal reports | Legal counsel |
-| Advisors | Discord, email | Denham, Jason, Jonjon |
+| Advisors | Discord, email | Denham, Jason, Jonathan |
 | Float users | Discord, Twitter | Campbell |
 | Technical partners | Telegram, email | Sven |
 
@@ -272,31 +272,32 @@ Exfiltration of funds - Identified via unexpected behaviour, unusual movements o
 
 ### Immediate Steps
 
-1. **Review exploit transactions to identify vulnerability** - [Jason Smythe](https://github.com/JasoonS)
+1. **Review exploit transactions to identify vulnerability - [Jason Smythe](https://github.com/JasoonS)**
     1. Tools Used:
         1. [Tenderly Debugger](https://dashboard.tenderly.co/tx/mainnet/0xf427afc17bd30a84f4b47dc2eaa176115cf28bdea1110245d3b0948ca3b6595c/debugger)
         2. [Foundry Transaction Replay Trace/Debugger](https://book.getfoundry.sh/reference/cast/cast-run.html#cast-run)
         3. [ethtx.info](https://ethtx.info/)
 2. **Pause contracts (if possible)** or take other defensive action, consider offensive action (i.e. white hat rescues)
-    1. Execute defensive action scripts → You do NOT want to be scrambling to figure out who can sign to take defensive actions - **[Jason Smythe](https://github.com/JasoonS)
-    2. Review Transaction(s) - [JonJon Clark](https://github.com/moose-code)
+    1. Execute defensive action scripts → You do NOT want to be scrambling to figure out who can sign to take defensive actions - **[Jason Smythe](https://github.com/JasoonS)**
+    2. Review Transaction(s) - **[Jonathan Clark](https://github.com/moose-code)**
 3. **Review all contracts to identify knock-on vulnerabilities. Pause those as necessary**
-4. **Update UI to reflect current status - [Denham Preen](https://github.com/DenhamPreen)
-5. **Contact security partners** 
+4. **Update UI to reflect current status - [Denham Preen](https://github.com/DenhamPreen)**
+5. **Contact security partners** - **[Jonathan Clark](https://github.com/moose-code)**
     1. ByteRocket
     2. Code4Arena
     3. Sherlock
-6. **Communicate to affected users via Discord and/or Twitter - [Campbell Easton](https://twitter.com/CampbellEaston)**
+6. **Consult with advisors - [Jonathan Clark](https://github.com/moose-code)**
+7. **Communicate to affected users via Discord and/or Twitter - [Campbell Easton](https://twitter.com/CampbellEaston)**
     1. Follow [Incident communications](#incident-communications) - Update regularly (every 4 to 12 hours) as meaningful new information or developments are available - help reassure your community that you are working to address the situation
     - Run all messages by the pod heads to ensure no information is shared that inadvertently puts security at risk or commits to specific remediation before all facts are known
-7. **Prepare patch for contracts, ideally following development process guidelines**
+8. **Prepare patch for contracts, ideally following development process guidelines - [Jason Smythe](https://github.com/JasoonS)**
     1. Have patch reviewed and signed off on by past auditors
     2. Have patch reviewed by as many trusted members of the team and community as possible
     3. If the patch or potential interactions are complex enough to warrant it, strongly consider a short [Code4rena](https://code4rena.com/) contest (can be started within 48 hours)
-    4. Deploy patch - **[Jason Smythe](https://github.com/JasoonS)
-8. **Draft and post Incident Report**
+    4. Deploy patch
+9. **Draft and post Incident Report - [Jonathan Clark](https://github.com/moose-code)**
     1.  See [Drafting an incident report](#drafting-an-incident-report) 
-9. **Keep evidence secure**
+10. **Keep evidence secure**
 
 ## Scenario 2 – Market Manipulation
 
@@ -311,19 +312,19 @@ Whale trader (relative to liquidity in the given market) where there is noticeab
         1. [Tenderly Debugger](https://dashboard.tenderly.co/tx/mainnet/0xf427afc17bd30a84f4b47dc2eaa176115cf28bdea1110245d3b0948ca3b6595c/debugger)
         2. [Foundry Transaction Replay Trace/Debugger](https://book.getfoundry.sh/reference/cast/cast-run.html#cast-run)
         3. [ethtx.info](https://ethtx.info/)
-        4. Internal Data Modelling - [Woo Sung Dong](https://twitter.com/WooSung40265546)
-2. **Consult with advisors** 
+        4. Internal Data Modelling - **[Woo Sung Dong](https://twitter.com/WooSung40265546)**
+2. **Consult with advisors - [Jonathan Clark](https://github.com/moose-code)**
 3. **Update UI to reflect any changes - [Denham Preen](https://github.com/DenhamPreen)**
 4. **Communicate to affected users via Discord and/or Twitter - [Campbell Easton](https://twitter.com/CampbellEaston)**
     1. Follow [Incident communications](#incident-communications) - Update regularly (every 4 to 12 hours) as meaningful new information or developments are available - help reassure your community that you are working to address the situation
     - Run all messages by the pod heads to ensure no information is shared that inadvertently puts security at risk or commits to specific remediation before all facts are known
-5. **Prepare patch for contracts, ideally following development process guidelines**
+5. **Prepare patch for contracts, ideally following development process guidelines - [Jason Smythe](https://github.com/JasoonS)**
     1. Have patch reviewed and signed off on by past auditors
     2. Have patch reviewed by as many trusted members of the team and community as possible
     3. If the patch or potential interactions are complex enough to warrant it, strongly consider a short [Code4rena](https://code4rena.com/) contest (can be started within 48 hours
-    4. Deploy patch - You do NOT want to be scrambling to figure out who can sign to take defensive actions - [Jason Smythe](https://github.com/JasoonS)
-6. **Draft and post Incident Report**
-    1.  See [Drafting an incident report](#drafting-an-incident-report) 
+    4. Deploy patch - You do NOT want to be scrambling to figure out who can sign to take defensive actions
+6. **Draft and post Incident Report - [Jonathan Clark](https://github.com/moose-code)**
+    1.  See [Drafting an incident report](#drafting-an-incident-report)
 7. **Keep evidence secure**
 
 ## Scenario 3 – GitHub or infrastructure Compromise
@@ -331,7 +332,7 @@ Whale trader (relative to liquidity in the given market) where there is noticeab
 **Git Hub compromise, such as hard-coded sensitive data (passwords, tokens, and authentication keys), badly configured access permissions, compromised CI/CD pipeline, etc, that results in access to private repositories**
 
 1. Review logs (IP address, User actions, etc.) - [Response team]
-2. Sign into GitHub as Admin, remove user from Float Organization - [Jason Smythe](https://github.com/JasoonS)
+2. Sign into GitHub as Admin, remove user from Float Organization - **[Jason Smythe](https://github.com/JasoonS)**
 3. Change Password and Do not share password with anyone 
 4. Log out / expire all sessions on all devices to log malicious actor out of account
 5. Determine impact - [Response Team]
@@ -346,13 +347,13 @@ Whale trader (relative to liquidity in the given market) where there is noticeab
         1. [Tenderly Debugger](https://dashboard.tenderly.co/tx/mainnet/0xf427afc17bd30a84f4b47dc2eaa176115cf28bdea1110245d3b0948ca3b6595c/debugger)
 2. **Consult with advisors** - [JonJon Clark](https://github.com/moose-code)
 3. **Update UI to reflect any changes - [Denham Preen](https://github.com/DenhamPreen)**
-4. **Communicate to affected users via Discord and/or Twitter -** [Campbell Easton](https://twitter.com/CampbellEaston)
+4. **Communicate to affected users via Discord and/or Twitter - [Campbell Easton](https://twitter.com/CampbellEaston)**
     1. Follow [Incident communications](#incident-communications) - Update regularly (every 4 to 12 hours) as meaningful new information or developments are available - help reassure your community that you are working to address the situation
     - Run all messages by the pod heads to ensure no information is shared that inadvertently puts security at risk or commits to specific remediation before all facts are known
-5. **Manage SLA with Third Party / Integration Partner**
+5. **Manage SLA with Third Party / Integration Partner** - **[Jason Smythe](https://github.com/JasoonS)**
     1. Get continuous updates
     2. Breach of conduct / SLA
-6. **Restore Operations** 
-7. **Draft and post Incident Report**
-    1.  See [Drafting an incident report](#drafting-an-incident-report) 
+6. **Restore Operations** - **[Jason Smythe](https://github.com/JasoonS)**
+7. **Draft and post Incident Report** - **[Jonathan Clark](https://github.com/moose-code)**
+    1.  See [Drafting an incident report](#drafting-an-incident-report)
 8. **Keep evidence secure**
